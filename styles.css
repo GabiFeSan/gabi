@@ -1,0 +1,365 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  /* Cor de fundo preta */
+  color: #fff;
+  /* Cor do texto branco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 260px;
+  height: 90px;
+  /* Ajuste conforme necessário */
+  width: auto;
+  /* Para manter a proporção */
+}
+
+
+
+nav {
+  flex-grow: 1;
+  /* Ocupa todo o espaço restante */
+  text-align: center;
+  /* Centraliza os itens */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* Centraliza os itens */
+}
+
+nav ul li {
+  margin-right: 200px;
+  /* Espaçamento entre os itens */
+  margin-top: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+  /* Remove o espaçamento do último item */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(4, 231, 4);
+}
+
+
+.slogan {
+  position: relative;
+  /* Alterado para posicionar o plano de fundo relativo ao container */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  /* Tamanho da fonte aumentado */
+  font-weight: bold;
+  /* Deixa as letras mais grossas */
+  animation: glow 2s ease-in-out infinite alternate;
+  /* Animação de brilho */
+}
+
+.slogan::before {
+  content: "";
+  /* Adiciona um pseudo-elemento para criar o plano de fundo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 155%;
+  height: 100%;
+  background-image: url(assents/img/plano3.png);
+  /* Caminho para o plano de fundo */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /* Coloca o plano de fundo atrás do texto */
+  opacity: 0.3;
+  /* Ajusta a opacidade conforme necessário */
+}
+
+.slogan img {
+  max-width: 100%;
+
+  /* Para ajustar a imagem ao container */
+}
+
+
+
+.planos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.planos img {
+  max-width: 400px;
+  /* Defina o tamanho máximo desejado */
+}
+
+.lema {
+  max-width: 200px;
+  /* Tamanho máximo da imagem */
+}
+
+.opcoes-container {
+  display: flex;
+  justify-content: space-around;
+  /* Espaçamento entre os itens */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.opcoes,
+.opcoes1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.opcoes img,
+.opcoes1 img {
+  max-width: 550px;
+  /* Defina o tamanho máximo desejado */
+  margin-bottom: 10px;
+  /* Espaçamento entre a imagem e o texto */
+}
+
+.descricao,
+.descricao1 {
+  text-align: center;
+  margin-top: 10px;
+  /* Espaçamento entre a imagem e o texto */
+}
+
+.descricao img,
+.descricao1 img {
+  max-width: 500px;
+  /* Defina o tamanho máximo desejado */
+}
+
+.descricao1,
+.descricao {
+  margin-top: -95px;
+}
+
+
+.mensal,
+.mensal1 {
+  margin-top: -90px;
+}
+
+.preco-mensal1 img {
+  display: flex;
+  text-align: left;
+  margin-top: -90px;
+  margin-right: -110px;
+
+}
+
+.preco-mensal img {
+  display: flex;
+  text-align: left;
+  margin-top: -90px;
+  margin-left: -10px;
+
+}
+
+
+
+.mensal {
+  margin-left: 25px;
+}
+
+.assinar img {
+  margin-top: -100px;
+  max-width: 200px;
+  margin-left: 5px;
+
+}
+
+.assinar-tri img {
+  display: flex;
+  margin-top: -65px;
+  max-width: 150px;
+  margin-left: -10px;
+
+}
+
+.assinar-tri {
+
+  margin-top: -20px;
+  max-width: 200px;
+  margin-left: -100x;
+
+}
+
+.preco-mensal1 img {
+  margin-left: -100px;
+}
+
+.assinar a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.assinar img {
+  max-width: 150px;
+  /* Ajuste conforme necessário */
+  display: block;
+  cursor: pointer;
+  /* Muda o cursor ao passar sobre a imagem */
+}
+
+
+
+.assinar1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  /* Espaçamento entre a imagem e o sublinhado */
+  border: 5px solid #fff;
+  /* Borda branca */
+  padding: 0;
+  /* Margem de 10px dos lados e 5px no topo e embaixo */
+  animation: blink 1s infinite;
+  /* Animação de piscar */
+
+}
+
+
+
+.assinar1 {
+  margin-left: 100px;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    border-color: #fff;
+  }
+
+  50% {
+    border-color: #ff00ff;
+  }
+
+  /* Cor roxa */
+}
+
+.preco-mensal3 {
+  display: flex;
+  margin-top: -35px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 200px;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.video-container video {
+  width: 640px 100;
+ 
+  border: 2px solid #000000;
+  /* Borda branca */
+}
+
+.video-border {
+  position: absolute;
+  top: 50%;
+  left: 142px;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 499px;
+  border: 7px solid #fff;
+  animation: blink 1s infinite;
+}
+
+.image-container {
+  margin-left: 300px;
+  
+}
+
+.image-container img {
+  display: flex;
+  width: 500px;
+  margin-top: -500px;
+
+  
+}
+
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+      transform: translateY(0);
+  }
+
+  40% {
+      transform: translateY(10px);
+  }
+
+  60% {
+      transform: translateY(5px);
+  }
+}
+
+.scroll-arrows {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: scroll 2s infinite linear;
+}
+
+.scroll-arrow img {
+  display: flex;
+  width: 100px;
+  height: auto;
+  margin-top: -250px;
+  margin-left: 290px;
+  
+}
+
+
+
+
+
+
+
